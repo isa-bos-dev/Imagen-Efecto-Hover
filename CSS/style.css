@@ -1,0 +1,147 @@
+*{
+    margin:0; /*para que se pegue al borde */
+    padding: 0;
+    -webkit-box-sizing: border-box;/*para que el padding no cree un espacio hacia afuera*/
+    font-family: arial;
+}
+.content-all{
+        width: 100%;
+        display: flex;
+        -ms-flex-wrap: wrap; 
+        flex-wrap: wrap; 
+    }
+.content-img{
+    width: 600px;
+    height: 330px; /*intentar que tenga la misma relación de tamaño que las imagenes*/
+    margin: auto; /*para centrar el contenedor*/
+    margin-top: 50px; /*para que se desplace 50 px hacia abajo */
+    margin-bottom: 50px; /*para que se desplace 50 px hacia arriba */
+    position: relative; /*para que todo el contenido que este dentro se posicione en relación almismo */
+    overflow: hidden /*para que se mantenga dentro el contenido*/
+}
+.content-img img{
+    width: 100%; /*para que la imagen sea el 100% del content-img */
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content1{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;/*para que no ocupe ningun espacio, estaria como volando*/
+    top: 0;
+    background: rgba(245, 114, 15,0.5);
+    -webkit-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    margin-left: -750px;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+.content2{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;/*para que no ocupe ningun espacio, estaria como volando*/
+    top: 0;
+    background: rgba(245, 114, 15,0.5);
+    -webkit-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    margin-left: -800px;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+.content3{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;/*para que no ocupe ningun espacio, estaria como volando*/
+    top: 0;
+    background: rgba(245, 114, 15,0.5);
+    -webkit-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    margin-left: -800px;
+    margin-top: -500px;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    -webkit-box-shadow: 0px 1px 20px -5px black; /*añadimos una sombra sin desplazamiento vertical y con un desplazamiento horizontal de 1 px */
+    box-shadow: 0px 1px 20px -5px black;
+}
+.content4{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;/*para que no ocupe ningun espacio, estaria como volando*/
+    top: 0;
+    background: rgba(245, 114, 15,0.5);
+    -webkit-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    margin-left: -850px;
+    margin-top: -500px;
+    -webkit-transition: all 700ms;
+    transition: all 700ms;
+}
+.content-img:hover .content1{
+    width: 222%;
+    -webkit-transition:all 900ms;
+    transition:all 900ms;
+}
+.content-img:hover .content2{
+    width: 222%;
+    -webkit-transition:all 300ms;
+    transition:all 300ms;
+}
+.content-img:hover .content3{
+    width: 222%;
+    -webkit-transition:all 500ms;
+    transition:all 500ms;
+}
+.content-img:hover .content4{
+    width: 222%;
+    -webkit-transition:all 700ms;
+    transition:all 700ms;
+}
+.content-img:hover img{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    opacity: 0.8;
+}
+.content-txt{
+    position: absolute;
+    top: 0;
+    width: 400px;
+    padding: 10px;
+    z-index: 10; /*para traerel texto delante*/
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+.content-txt h2{
+    font-size: 30px;
+    opacity: 0;
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+.content-txt p{
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+.content-img:hover h2{
+    opacity: 1;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.content-img:hover p{
+    opacity: 1;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
